@@ -2,7 +2,7 @@
 
 # hack_node
 
-
+Prof of concept Node.js project using express, and MongoDB for retrieving PAF activities.
 
 ## Usage
 
