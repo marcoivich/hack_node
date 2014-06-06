@@ -32,7 +32,8 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
-app.get('/activity', activity.list);
+app.get('/paf-repo/resources/activities/:guid', activity.findByGuid);
+app.get('/paf-repo/resources/activities', activity.findAll);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
